@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.so
+*.log
+*.log.*
+*.DS_Store
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*~
+
+# Downloaded/Generated Data - These can get very large and are specific to user runs
+# You might choose to track empty directories with a .gitkeep file if needed,
+# but not the content itself.
+
+# LLM Models (these are large binary files, usually downloaded, not part of source code)
+llm_models/*.gguf
+llm_models/*.* # More general if other model types are added
+
+# Uploaded PDFs (temporary and user-specific)
+pdf_uploads/
+pdf_uploads/*.*
+
+# FAISS Vector Stores (generated, can be large, specific to processed PDFs)
+vector_stores/
+vector_stores/*/
+vector_stores/*.*
+
+# Sentence Transformers cache (downloads models)
+.cache/
+sentence-transformers/
+*.pt # PyTorch model files that might be cached by sentence-transformers
+
+# Specific files if you create them for testing/temp purposes
+temp_pdf_uploads/
+temp_pdf_uploads/*.*
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# If you use pip freeze > requirements.txt, you might want to ignore specific dev requirements
+# or just manage your requirements carefully.
+
+# Any sensitive configuration files (if you add them later, e.g., API keys for other services)
+# .env
+# config.ini
+# secrets.json
